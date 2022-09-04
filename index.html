@@ -4,13 +4,8 @@
     <title>James Teo</title>
     <style>
         body{
-            background-color: rgb(181, 220, 255);
-        }
-        #contents{
-            align-items: stretch;
-            text-align: center;
-            font-family: fantasy;
-            font-style: oblique;
+            background-image: url("bg.jpg");
+            background-size: cover;
         }
         table{
             margin-left: auto;
@@ -18,27 +13,36 @@
             background-color: rgb(156, 235, 235);
         }
     </style>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
-    <div id="contents">
-        <h3>
-            Into the life a genius (in making)...
-        </h3>
-        <br>
-    <table>
-        <tr>
-            <td><img src="skating.jpg" height="200px"></td>
-            <td>
-                My name is James, a year 2 SCIS student, and this is my story!
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                I like to skate on my free time and I think that programming is a lifestyle.
-                <br>
-            </td>
-        </tr>
-    </table>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-dark bg-dark bg-opacity-75">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">James' Profile</a>
+        </div>
+    </nav>
+    <div class="container text-center text-light font-monospace">
+        <div class="row">
+            <div class="col">
+                <h2>Welcome to my world!</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center font-monospace bg-dark text-light bg-opacity-75" style="width: 95%;padding-top: 5%;padding-bottom: 5%;">
+        <div class="row">
+            <div class="col-6">
+                <img src="skating.jpg" style="width:50%; border-radius: 10%;">
+            </div>
+            <div class="col-6 ">
+                <h3>About Me:</h3>
+                My name is James.<br>
+                I am a Year 2 SCIS student.<br><br>
+                <div class="btn btn-light">More info</div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
