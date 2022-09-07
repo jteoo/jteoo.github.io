@@ -34,25 +34,86 @@
             </div>
             </div>
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                   <div class="card bg-dark bg-opacity-75">
                     <div class="card-body">
                       <h5 class="card-title">Paynow</h5>
                       <p class="card-text">Click on the button below to get my paynow QR! Thank you for your generous contribution!</p>
-                      <a href="#" class="btn btn-light">Click me!</a>
+                      <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#paynow">Click me!</a>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-4">
+                  <div class="card bg-dark bg-opacity-75">
+                    <div class="card-body">
+                      <h5 class="card-title">PayLah!</h5>
+                      <p class="card-text">Click on the button below to get my PayLah QR! Thank you for your generous contribution!</p>
+                      <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#paylah">Click me!</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
                   <div class="card bg-dark bg-opacity-75">
                     <div class="card-body">
                       <h5 class="card-title">GrabPay</h5>
                       <p class="card-text">Click on the button below to get my GrabPay QR! Thank you for your generous contribution!</p>
-                      <a href="#" class="btn btn-light">Click me!</a>
+                      <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#grabpay">Click me!</a>
                     </div>
                   </div>
                 </div>
               </div>
+          </div>
+
+          <!-- modals -->
+          <div class="modal fade" id="paynow" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content bg-dark bg-opacity-75 text-light">
+                <div class="modal-header">
+                  <h5 class="modal-title">Paynow QR</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p><img class="w-100" src="./paynow.jpg" alt=""></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="paylah" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content bg-dark bg-opacity-75 text-light">
+                <div class="modal-header">
+                  <h5 class="modal-title">PayLah QR</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p><img class="w-100" src="./paylah.jpg" alt="" srcset=""></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="grabpay" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content bg-dark bg-opacity-75 text-light">
+                <div class="modal-header">
+                  <h5 class="modal-title">GrabPay QR</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p><img class="w-100" src="./grabpay.jpg" alt="" srcset=""></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
           </div>
 </body>
 </html>
