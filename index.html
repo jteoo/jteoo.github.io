@@ -5,7 +5,8 @@
     <style>
         body{
             background-image: url("bg.jpg");
-            background-size: cover;
+            background-size: 100%;
+            background-repeat: no-repeat;
         }
         table{
             margin-left: auto;
@@ -19,7 +20,7 @@
 <body>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <nav class="navbar navbar-dark bg-dark bg-opacity-75">
+    <nav class="navbar navbar-dark bg-dark bg-opacity-75 font-monospace">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">James' Profile</a>
         </div>
@@ -40,9 +41,33 @@
                 <h3>About Me:</h3>
                 My name is James.<br>
                 I am a Year 2 SCIS student.<br><br>
-                <div class="btn btn-light">More info</div>
+                <div class="btn btn-light" data-bs-toggle="modal" data-bs-target="#myinfo">More info</div>
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade font-monospace" id="myinfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark text-light bg-opacity-75 text-center">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">More about me</h5>
+              <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Age: 22 <br>
+                Gender: Male <br>
+                Birthday: 11 April 2000 <br>
+                Height: 174cm <br>
+                Weight: 64kg and growing<br>
+
+            
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
